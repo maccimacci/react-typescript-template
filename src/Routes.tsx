@@ -2,8 +2,8 @@ import * as React from 'react';
 // import { RouteComponentProps } from 'react-router';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Notificaciones from './pages/Notificaciones';
-import Novedades from './pages/Novedades';
+import Notifications from './pages/Notifications';
+import News from './pages/News';
 import Dashboard from './pages/Dashboard';
 import NoMatch from './pages/NoMatch';
 
@@ -15,8 +15,8 @@ function Routes() {
         <Switch>
             <Route exact={true} path={RouterPathEnum.HOME} component={Dashboard} />
             {/* { (!isLoggedIn) ? <Redirect to={RouterPathEnum.HOME} /> : '' } */}
-            <Route path={RouterPathEnum.NOTIFICATIONS} component={Notificaciones}/>
-            <Route path={RouterPathEnum.NOVEDADES} component={Novedades}/>
+            <Route path={RouterPathEnum.NOTIFICATIONS} component={Notifications}/>
+            <Route path={RouterPathEnum.NEWS} component={News}/>
             <Route component={NoMatch} />
             <Redirect to={RouterPathEnum.HOME} />
         </Switch>

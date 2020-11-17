@@ -1,7 +1,7 @@
 const RouterPathEnum = {
     HOME : "/",
-    NOTIFICATIONS: "/notificaciones",
-    NOVEDADES: "/novedades",
+    NOTIFICATIONS: "/notificacao",
+    NEWS: "/novidade",
 }
 
 export default RouterPathEnum;

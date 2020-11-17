@@ -6,8 +6,8 @@ function Menu() {
         <div id="menu">
             <ul>
                 <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/notificaciones"}>Notificaciones</Link></li>
-                <li><Link to={"/novedades"}>Novedades</Link></li>
+                <li><Link to={"/notificacao"}>Notificaciones</Link></li>
+                <li><Link to={"/novidade"}>Novedades</Link></li>
             </ul>
         </div>
     )

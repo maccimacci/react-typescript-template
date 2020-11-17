@@ -3,8 +3,8 @@ import * as React from 'react';
 function Notificaciones() {
     return (
         <div id="notificaciones">
-            <h1>Notificaciones</h1>
-            <p>Correo hacia productores y asegurados</p>
+            <h1>Notifications</h1>
+            <p>Notifications to everyone</p>
         </div>
     )
 }
