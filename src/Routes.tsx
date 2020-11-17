@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Notificaciones from './pages/Notificaciones';
 import Novedades from './pages/Novedades';
 import Dashboard from './pages/Dashboard';
+import NoMatch from './pages/NoMatch';
 
 import RouterPathEnum from './services/router'
 
@@ -16,6 +17,7 @@ function Routes() {
             {/* { (!isLoggedIn) ? <Redirect to={RouterPathEnum.HOME} /> : '' } */}
             <Route path={RouterPathEnum.NOTIFICATIONS} component={Notificaciones}/>
             <Route path={RouterPathEnum.NOVEDADES} component={Novedades}/>
+            <Route component={NoMatch} />
             <Redirect to={RouterPathEnum.HOME} />
         </Switch>
       </div>
