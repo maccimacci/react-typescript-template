@@ -1,0 +1,10 @@
+$mygray : rgb(214, 213, 213);
+
+body {
+    background-color: $mygray;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
