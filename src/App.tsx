@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import SideNav from './pages/sidebar';
+import SideNav from './pages/Sidebar';
 import Routes from './Routes'
 
 import './App.scss';
