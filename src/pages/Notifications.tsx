@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-function Notificaciones() {
+function Notifications() {
     return (
-        <div id="notificaciones">
+        <div id="notifications">
             <h1>Notifications</h1>
             <p>Notifications to everyone</p>
         </div>
     )
 }
 
-export default Notificaciones;
+export default Notifications;

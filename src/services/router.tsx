@@ -1,6 +1,6 @@
 const RouterPathEnum = {
     HOME : "/",
-    NOTIFICATIONS: "/notificacao",
+    NOTIFICATIONS: "/notifications",
     NEWS: "/novidade",
 }
 

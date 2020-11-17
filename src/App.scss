@@ -1,8 +1,5 @@
-$mygray : rgb(214, 213, 213);
 
-body {
-    background-color: $mygray;
-}
+@import "~bootstrap/scss/bootstrap";
 
 .App {
     display: grid;
