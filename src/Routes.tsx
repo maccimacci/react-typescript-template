@@ -1,6 +1,5 @@
 import * as React from 'react';
-// import { RouteComponentProps } from 'react-router';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Notifications from './pages/Notifications';
 import News from './pages/News';
@@ -18,7 +17,7 @@ function Routes() {
             <Route path={RouterPathEnum.NOTIFICATIONS} component={Notifications}/>
             <Route path={RouterPathEnum.NEWS} component={News}/>
             <Route component={NoMatch} />
-            <Redirect to={RouterPathEnum.HOME} />
+            {/* <Redirect to={RouterPathEnum.HOME} /> */}
         </Switch>
       </div>
     )

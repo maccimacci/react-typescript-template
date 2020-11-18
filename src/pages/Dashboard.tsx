@@ -1,10 +1,17 @@
 import * as React from 'react';
+import Grid from '../components/Grid';
+import Mosaic from '../components/Mosaic';
 
 function Dashboard() {
     return (
-        <div id="dashboard">
-            <h1>Dashboard</h1>
-            <p>Start Here</p>
+        <div className="page dashboard">
+            <Mosaic
+                title="Dashboard" 
+                subtitle="Start Here" 
+                description="des" 
+            />
+
+            <Grid />
         </div>
     )
 }

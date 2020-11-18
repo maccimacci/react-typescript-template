@@ -7,6 +7,7 @@ module.exports = {
     mode : 'development',
     entry : './src/index.tsx',
     devServer: {
+        historyApiFallback: true,
         contentBase: './dist',
         hot: true
     },

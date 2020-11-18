@@ -5,13 +5,19 @@ import SideNav from './pages/Sidebar';
 import Routes from './Routes'
 
 import './App.scss';
+import Header from './pages/Header';
+import Footer from './pages/Footer';
 
 function App() {
     return(
       <div className="App">
         <BrowserRouter>
-          <SideNav />
-          <Routes />
+          <Header/>
+          <div className="main">
+            <SideNav />
+            <Routes />
+          </div>
+          <Footer />
         </BrowserRouter>
       </div>
     )

@@ -1,7 +1,3 @@
-
-@import "~bootstrap/scss/bootstrap";
-
-.App {
-    display: grid;
-    grid-template-columns: 200px auto;
-}
+@import "styles/colors";
+@import "styles/base";
+@import "styles/components";
