@@ -1,18 +1,16 @@
 import * as React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-
-import SideNav from './pages/Sidebar';
-import Routes from './Routes'
+import Main from './pages/Main'
+import Header from './components/Layout/Header';
 
 import './App.scss';
 
 function App() {
+
     return(
-      <div className="App">
-        <BrowserRouter>
-          <SideNav />
-          <Routes />
-        </BrowserRouter>
+      <div className="app">
+          <Header />
+          <Main />
+          <footer />
       </div>
     )
 }

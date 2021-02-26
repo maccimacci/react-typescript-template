@@ -1,12 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 
     mode : 'development',
     entry : './src/index.tsx',
     devServer: {
+        historyApiFallback: true,
         contentBase: './dist',
         hot: true
     },
@@ -18,18 +20,22 @@ module.exports = {
             exclude: /node_modules/,
           },
           {
-            test: /\.s(a|c)ss$/,
+            test: /\.(woff(2)?|ttf|eot|png|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'assets/',
+
+            }
+          },
+          {
+            test: /\.(s*)css$/,
             use: [
               'style-loader',
               'css-loader',
-              // {
-              //   loader: 'css-loader',
-              //   options: { modules: true }
-              // },
-              'postcss-loader',
               'sass-loader'
             ]
-          }
+          },
         ],
     },
 
@@ -45,8 +51,12 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new HtmlWebpackPlugin({
+            title: "change me",
+            favicon: "./src/assets/favicon.ico",
             template: path.join(__dirname, 'src/public', 'template.html')
-        })
+        }),
+        new Dotenv(),
+
     ]
 
 }
