@@ -1,0 +1,49 @@
+header {
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+
+        ul {
+            display: flex;
+            height: 100%;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: list-item;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-top: 15px;
+                padding-right: 25px;
+
+                a {
+                    color: $alternative-dark;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid $alternative;
+                    a {
+                        color: $alternative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+    }
+}

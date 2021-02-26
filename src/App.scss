@@ -1,10 +1,6 @@
-$mygray : rgb(214, 213, 213);
-
-body {
-    background-color: $mygray;
-}
-
-.App {
-    display: grid;
-    grid-template-columns: 200px auto;
-}
+@import "styles/colors";
+@import "styles/controls";
+@import "styles/base";
+@import "styles/components";
+@import "styles/layout";
+@import "styles/menu";

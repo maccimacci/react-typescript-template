@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'DIN';
+    src: url('./assets/353BD4_0_0.eot');
+    src: url('./assets/353BD4_0_0.eot?#iefix') format('embedded-opentype'), url('./assets/353BD4_0_0.woff2') format('woff2'), url('./assets/353BD4_0_0.woff') format('woff'), url('./assets/353BD4_0_0.ttf') format('truetype');
+    font-weight: lighter;
+}
+
+$thin : 0.5px;
+$standard : 30px;
+
+.line {
+    border-bottom: $thin solid $white;
+}
+
+.mb-30, .mb {
+    margin-bottom: $standard;
+}
+
+.mt {
+    margin-top : $standard;
+}
+
+.mr-10 {
+    margin-right: 10% !important;
+}
+
+.pl {
+    padding-left: $standard;
+}

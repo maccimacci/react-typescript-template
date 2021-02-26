@@ -1,0 +1,128 @@
+
+.brand {
+    //background-image: url('./assets/brand.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    height: 54px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.mosaic {
+
+    @extend .mt;
+    @extend .mb;
+    @extend .pl;
+
+    .title {
+        font-size: 35px !important;
+        font-weight: 300;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .description {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+.dashboard {
+
+    .content {
+
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 4fr 1fr;
+
+        .filters {
+
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+
+            .row {
+                display:grid;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .elementfilter {
+                    display:grid;
+                    grid-template-rows: auto 1fr;
+                    text-align: start;
+                    grid-gap: 4px;
+                }
+
+            }
+
+            .options {
+                .tipos {
+                    label {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.component {
+
+    padding: 30px;
+
+    margin-bottom: 15px;
+    border: 0.5px solid $white;
+
+    background-color: white;
+    border-radius: 3px;
+
+    .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        // margin-top: 10px;
+        // margin-left:10px;
+    }
+}
+
+
+.link {
+    color: $blue-dark;
+    cursor: pointer;
+}
+
+.pagination {
+
+    display:grid;
+    grid-template-columns: auto 1fr;
+
+    ul { padding: 6px;}
+    li { display: inline;}
+
+
+    .number {
+        margin-left: 5px;
+    }
+}
+
+@mixin arrow($image) {
+
+    background-image: url($image);
+    background-repeat: no-repeat;
+
+    background-color: transparent;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background: transparent;
+        background-image: url($image);
+        background-repeat: no-repeat;
+    }
+}
